@@ -46,6 +46,8 @@ public class EmployeeSalaryCalculator
 		/*
 		All new code must be added between the commented lines below.
 			YOUR CODE STARTS HERE
+
+
 			YOUR CODE ENDS HERE
 		Test cases execute automatically each time you commit code.
 		You must follow these rules:
@@ -54,18 +56,22 @@ public class EmployeeSalaryCalculator
 			3. Do not change existing class names, interface names, method signatures, or attributes.
 			4. Follow standard Java naming conventions for all code that you write.
 		*/
-
+		overTimeRate = HR * 2;
 
 				if(HW <= standardWorkingHours)
 				{
 					//YOUR CODE STARTS HERE
-					 
+					 grossSalary = HW * HR ;
 
 					//YOUR CODE ENDS HERE
 				}
 				else
 				{
 					//YOUR CODE STARTS HERE
+					overTime= HW - standardWorkingHours;
+					overTimePay = overTime * overTimeRate;
+					basicPay = standardWorkingHours * HR;
+					grossSalary = (basicPay + overTimePay) ;
  
 
 					//YOUR CODE ENDS HERE
